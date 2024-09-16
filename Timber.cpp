@@ -55,6 +55,9 @@ int main() {
 	float cloud1Speed = 0.0f;
 	float cloud2Speed = 0.0f;
 	float cloud3Speed = 0.0f;
+	
+	// Variables to control time itself
+	Clock clock;
 
 
 
@@ -71,6 +74,23 @@ int main() {
 		**************************************** Update the scene
 		****************************************
 		*/
+
+		//Measure Time
+		Time dt = clock.restart();
+
+		// Setup the bee
+		if (!beeActive) {
+			//How fast is the bee
+			srand((int)time(0));
+			beeSpeed = (rand() % 200) + 200;
+
+			// How high is the bee
+			srand((int)time(0) * 10);
+			float height = (rand() % 500) + 500;
+			spriteBee.setPosition(2000, height);
+			beeActive = true;
+		}
+
 		/***************************************** Draw the scene
 		****************************************
 		*/
