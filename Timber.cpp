@@ -89,6 +89,16 @@ int main() {
 			float height = (rand() % 500) + 500;
 			spriteBee.setPosition(2000, height);
 			beeActive = true;
+		} else {
+			// Move the bee
+			spriteBee.setPosition(spriteBee.getPosition().x - 
+								  (beeSpeed * dt.asSeconds()),
+								  spriteBee.getPosition().y);
+			// Has the bee reached the left-hand of the screen
+			if (spriteBee.getPosition().x < -100) {
+				// Set it up ready to be a whole new bee next frame
+				beeActive = false;
+			}
 		}
 
 		/***************************************** Draw the scene
