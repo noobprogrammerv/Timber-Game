@@ -60,6 +60,18 @@ int main() {
 	// Variables to control time itself
 	Clock clock;
 
+	// Time bar
+	RectangleShape timeBar;
+	float timeBarStartWidth = 400;
+	float timeBarHeight = 80;
+	timeBar.setSize(Vector2f(timeBarStartWidth, timeBarHeight));
+	timeBar.setFillColor(Color::Red);
+	timeBar.setPosition((1920 / 2) - timeBarStartWidth / 2, 980);
+
+	Time gameTimeTotal;
+	float timeRemaining = 6.0f;
+	float timeBarWidthPerSecond = timeBarStartWidth / timeRemaining;
+
 	// Track whether the game is running
 	bool paused = true;
 
@@ -73,7 +85,7 @@ int main() {
 	// Set the font to our message
 	messageText.setFont(font);
 	scoreText.setFont(font);
-	// Assign the actual message
+	// Assign the actual message 
 	messageText.setString("Press enter to start!");
 	scoreText.setString("Score = 0");
 	// Make it really big
@@ -102,6 +114,10 @@ int main() {
 		// Start the game
 		if (Keyboard::isKeyPressed(Keyboard::Return)) {
 			paused = false;
+
+			// Reset the time and the score
+			score = 0;
+			timeRemaining = 6;
 		}
 
 		/***************************************** 
@@ -111,6 +127,24 @@ int main() {
 		if (!paused) {
 			//Measure Time
 			Time dt = clock.restart();
+
+			// Subtract from the amount of time remaining
+			timeRemaining -= dt.asSeconds();
+			// resize up the time bar
+			timeBar.setSize(Vector2f(timeBarWidthPerSecond * timeRemaining, 
+							timeBarHeight));
+			if (timeRemaining <= 0.0f) {
+				// Pause the game
+				paused = true;
+				// Change the message shown to the player
+				messageText.setString("Out of time!");
+
+				// Reposition the text based on it new size
+				FloatRect textRect = messageText.getLocalBounds();
+				messageText.setOrigin(textRect.left + textRect.width / 2.0f,
+									  textRect.top + textRect.height / 2.0f);
+				messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
+			}
 
 			// Setup the bee
 			if (!beeActive) {
@@ -142,6 +176,11 @@ int main() {
 					// Set it up ready to be a whole new bee next frame
 					beeActive = false;
 				}
+
+				// Update the score text
+				std::stringstream ss;
+				ss << "Score = " << score;
+				scoreText.setString(ss.str());
 			}
 
 			// Manage clouds
@@ -220,9 +259,17 @@ int main() {
 		window.draw(spriteTree);
 		// Draw the insect
 		window.draw(spriteBee);
+		// Draw the score
+		window.draw(scoreText);
+		if (paused) {
+			window.draw(messageText);
+		}
+		// Draw the timebar
+		window.draw(timeBar);
 
 		// Show everything we just drew 
 		window.display();
+		
 	}
 	return 0;
 }
