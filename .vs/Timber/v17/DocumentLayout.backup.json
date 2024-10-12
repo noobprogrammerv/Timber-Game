@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alex\\source\\repos\\SFML\\CppProgramming5Games\\Timber\\",
+  "WorkspaceRootPath": "F:\\Github\\Games\\Timber-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A299CD7-85B7-46DB-A25C-24A5A8F0F1E1}|Timber.vcxproj|C:\\Users\\Alex\\source\\repos\\SFML\\CppProgramming5Games\\Timber\\Timber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2A299CD7-85B7-46DB-A25C-24A5A8F0F1E1}|Timber.vcxproj|F:\\Github\\Games\\Timber-Game\\Timber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2A299CD7-85B7-46DB-A25C-24A5A8F0F1E1}|Timber.vcxproj|solutionrelative:Timber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Timber.cpp",
-              "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\SFML\\CppProgramming5Games\\Timber\\Timber.cpp",
+              "DocumentMoniker": "F:\\Github\\Games\\Timber-Game\\Timber.cpp",
               "RelativeDocumentMoniker": "Timber.cpp",
-              "ToolTip": "C:\\Users\\Alex\\source\\repos\\SFML\\CppProgramming5Games\\Timber\\Timber.cpp",
+              "ToolTip": "F:\\Github\\Games\\Timber-Game\\Timber.cpp",
               "RelativeToolTip": "Timber.cpp",
-              "ViewState": "AgIAABcBAAAAAAAAAAAAABgBAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAAAFUBAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-02T20:22:08.739Z",
               "EditorCaption": ""
