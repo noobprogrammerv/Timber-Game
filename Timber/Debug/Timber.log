@@ -1,14 +1,16 @@
 ﻿  Timber.cpp
-F:\Github\Games\Timber-Game\Timber.cpp(218,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(222,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(227,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(252,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(274,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(277,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(293,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(296,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(312,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\Github\Games\Timber-Game\Timber.cpp(315,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(240,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(261,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(308,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(312,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(317,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(342,19): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(402,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(405,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(421,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(424,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(440,27): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\Github\Games\Timber-Game\Timber.cpp(443,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   Timber.vcxproj -> F:\Github\Games\Timber-Game\Debug\Timber.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
